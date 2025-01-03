@@ -7,15 +7,17 @@ import apexLogo from "@/assets/logo-apex.png";
 import Image from "next/image";
 export const LogoTicker = () => {
   return (
-    <div>
+    <div className="py-8 md:py-12 bg-white">
       <div className="container">
-        <div>
-          <Image src={acmeLogo} alt="acme logo" />
-          <Image src={quantumLogo} alt="quantumLogo logo" />
-          <Image src={echoLogo} alt="echoLogo logo" />
-          <Image src={celestialLogo} alt="celestialLogo logo" />
-          <Image src={pulseLogo} alt="pulseLogo logo" />
-          <Image src={apexLogo} alt="apexLogo logo" />
+        <div className="flex overflow-hidden [mask-image:linear-gradient(to_right,transparent,black,transparent)]">
+          <div className="flex gap-14 flex-none">
+            <Image src={acmeLogo} alt="acme logo" />
+            <Image src={quantumLogo} alt="quantumLogo logo" />
+            <Image src={echoLogo} alt="echoLogo logo" />
+            <Image src={celestialLogo} alt="celestialLogo logo" />
+            <Image src={pulseLogo} alt="pulseLogo logo" />
+            <Image src={apexLogo} alt="apexLogo logo" />
+          </div>
         </div>
       </div>
     </div>
