@@ -56,12 +56,14 @@ export const Pricing = () => {
   return (
     <section className="py-24">
       <div className="container">
-        <h2 className="section-title">Pricing</h2>
-        <p className="section-description mt-5">
-          Free forever upgrade for Unlimited tasks, better security and
-          exclusive features.
-        </p>
-        <div>
+        <div className="section-heading">
+          <h2 className="section-title">Pricing</h2>
+          <p className="section-description mt-5">
+            Free forever upgrade for Unlimited tasks, better security and
+            exclusive features.
+          </p>
+        </div>
+        <div className="flex flex-col gap-6  items-center mt-10 lg:flex-row lg:items-end lg:justify-center">
           {pricingTiers.map(
             ({
               title,
@@ -74,7 +76,7 @@ export const Pricing = () => {
               <div
                 key={title}
                 className={twMerge(
-                  "p-10 border border-[#F1F1F1] rounded-3xl shadow-[0_7px_14px_#EAEAEA]",
+                  "p-10 border border-[#F1F1F1] rounded-3xl shadow-[0_7px_14px_#EAEAEA] max-w-xs w-full",
                   inverse === true && "border-black bg-black text-white/60"
                 )}
               >
