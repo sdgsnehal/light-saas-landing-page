@@ -95,7 +95,7 @@ export const Pricing = () => {
                     <div className="inline-flex text-sm px-4 py-1.5 rounded-xl  border border-white/20">
                       <motion.span
                         animate={{
-                          backgroundPositionX: "-100%",
+                          backgroundPositionX: "100%",
                         }}
                         transition={{
                           duration: 1,
